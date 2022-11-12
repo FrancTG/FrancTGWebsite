@@ -118,13 +118,14 @@ body{
 
 /* MUSICA */
 .playlists{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 .playlist{
-    width: 350px;
+    min-width: 350px;
     margin-bottom: 1rem;
 }
 .playlist-text{
@@ -136,4 +137,24 @@ body{
 .playlist-subtitle{
     font-size: 1em;
     color: var(--text-color-secondary);
+}
+
+/* Scrollbar */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #85000b #181818;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #85000b;
+    border-radius: 10px;
+    border: 3px solid #181818;
 }
