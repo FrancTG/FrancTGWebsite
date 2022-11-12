@@ -1,0 +1,139 @@
+:root{
+    --bg-color: #181818;
+    --primary-color: #d6a400;
+    --secondary-color: #85000b;
+    --tertiary-color: #007981;
+    --text-color: #ffffff;
+    --text-color-secondary: #999999;
+    --large-padding: 1rem;
+    --medium-padding: 0.5rem;
+    --small-padding: 0.3rem;
+    --medium-border-radius: 30px;
+    --small-border-radius: 30px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--large-padding);
+}
+.article-title{
+    font-size: 2em;
+    padding: var(--large-padding);
+    border-bottom: 4px solid;
+    border-image: linear-gradient(45deg, #d6a400, #85000b) 1;
+    margin: 3rem 0;
+}
+
+/* HEADER */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--medium-padding);
+}
+.logo{
+    margin: auto 0;
+}
+.menu ul{
+    display: flex;
+    gap: 15px;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: var(--text-color-secondary);
+    transition: 0.3s;
+}
+
+/* WELCOME */
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.welcome-text{
+    margin: auto;
+}
+.welcome-img{
+    margin: auto;
+}
+.welcome-title{
+    font-size: 3em;
+}
+.welcome-subtitle{
+    font-size: 2em;
+    color: var(--text-color-secondary);
+}
+.welcome-img img{
+    width: 400px ;
+}
+
+/* PROJECTS */
+.projects ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.projects .project{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    border-radius: var(--medium-border-radius);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.projects li:hover {
+    box-shadow: 0px 0px 5px 0px #d6a400;
+    transition: 0.3s;
+}
+
+.project-logo{
+    width: 40px;
+}
+.project-title{
+    display: flex;
+    gap: 15px;
+}
+.project-name{
+    margin: auto 0;
+}
+.project-description{
+    margin: auto 0;
+}
+
+/* MUSICA */
+.playlists{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.playlist{
+    width: 350px;
+    margin-bottom: 1rem;
+}
+.playlist-text{
+    margin: 1rem 0;
+}
+.playlist-title{
+    font-size: 1.5em;
+}
+.playlist-subtitle{
+    font-size: 1em;
+    color: var(--text-color-secondary);
+}
