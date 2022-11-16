@@ -13,10 +13,9 @@
             <div class="logo">Franc</div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
                     <li><a href="#project-title">Proyectos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#music-title">Música</a></li>
+                    <li><a href="#gallery-title">Galería</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +52,7 @@
             </div>
         </article>
         <article class="container">
-            <div class="article-title">Mi música</div>
+            <div  id="music-title" class="article-title">Mi música</div>
             <div class="playlists">
                 <div class="playlist">
                     <div class="playlist-text">
@@ -99,9 +98,36 @@
                 </div>
             </div>
         </article>
+        <article class="container">
+            <div id="gallery-title" class="article-title">Galería</div>
+            <div class="image-gallery">
+                <div class="image-list">
+                    <div onclick="loadImage(1)" class="image-item">
+                        <div class="image-title">Raccoon</div>
+                        <div class="image-desc">Imagen vectorial de un mapache</div>
+                    </div>
+                    <div onclick="loadImage(2)" class="image-item">
+                        <div class="image-title">Gnar 3D</div>
+                        <div class="image-desc">Personaje del juego LOL en 3D</div>
+                    </div>
+                    <div onclick="loadImage(3)" class="image-item">
+                        <div class="image-title">Bota 3D</div>
+                        <div class="image-desc">Recreación bota en 3D</div>
+                    </div>
+                    <div onclick="loadImage(4)" class="image-item">
+                        <div class="image-title">Goku</div>
+                        <div class="image-desc">Imagen vectorial personaje Goku</div>
+                    </div>
+                </div>
+                <div class="image-preview">
+                    <img id="img-preview" src="img/galeria/gnar.png" alt="preview">
+                </div>
+            </div>
+        </article>
     </main>
     <footer>
 
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

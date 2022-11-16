@@ -9,7 +9,7 @@
     --medium-padding: 0.5rem;
     --small-padding: 0.3rem;
     --medium-border-radius: 30px;
-    --small-border-radius: 30px;
+    --small-border-radius: 20px;
 }
 
 body{
@@ -95,10 +95,10 @@ body{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     margin: 1rem 0;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .projects li:hover {
-    box-shadow: 0px 0px 5px 0px #d6a400;
+    box-shadow: 0px 0px 2px 0px #ffffff;
     transition: 0.3s;
 }
 
@@ -116,7 +116,7 @@ body{
     margin: auto 0;
 }
 
-/* MUSICA */
+/* MUSIC */
 .playlists{
     width: 100%;
     display: flex;
@@ -139,7 +139,46 @@ body{
     color: var(--text-color-secondary);
 }
 
-/* Scrollbar */
+/* GALLERY */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse;
+    gap: 100px;
+}
+.image-list{
+    width: 500px;
+    max-height: 500px;
+    overflow-x: auto;
+}
+.image-preview{
+    width: 500px;
+    height: 500px;
+}
+.image-preview img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: var(--small-border-radius);
+}
+.image-item{
+    padding: var(--large-padding);
+    border: 2px solid #d6a400;
+    border-radius: var(--medium-border-radius);
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.image-item:hover{
+    border: 2px solid #007981;
+    cursor: pointer;
+}
+.image-item .image-title{
+    color: var(--primary-color);
+}
+
+/* SCROLLBAR */
 * {
     scrollbar-width: auto;
     scrollbar-color: #85000b #181818;
